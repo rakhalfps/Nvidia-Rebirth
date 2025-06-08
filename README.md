@@ -1,9 +1,10 @@
 # 🎮 Nvidia Rebirth - Modded Nvidia Graphics Driver
 
-![Nvidia Rebirth Banner](https://raw.githubusercontent.com/your-username/Nvidia-Rebirth/main/assets/banner.png)
+![Nvidia Rebirth Banner](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/banner.png)
+![Additional Banner](https://i.imgur.com/SYPXMP5.png)
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/your-username/Nvidia-Rebirth?color=brightgreen&label=Latest%20Release)
-![GitHub all releases](https://img.shields.io/github/downloads/your-username/Nvidia-Rebirth/total?color=blue&label=Total%20Downloads)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/rakhalfps/Nvidia-Rebirth?color=brightgreen&label=Latest%20Release)
+![GitHub all releases](https://img.shields.io/github/downloads/rakhalfps/Nvidia-Rebirth/total?color=blue&label=Total%20Downloads)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ---
@@ -56,19 +57,19 @@ Tested on systems like **RTX 4060 + Ryzen 7 5700X3D**, Nvidia Rebirth is perfect
 
 ### 📊 FPS Comparison Chart
 
-![FPS Graph](https://raw.githubusercontent.com/your-username/Nvidia-Rebirth/main/assets/fps-comparison-v2.png)
+![FPS Graph](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/fps-comparison-v2.png)
 
 ---
 
 ### 🖼️ Installer Preview
 
-![Installer Screenshot](https://raw.githubusercontent.com/your-username/Nvidia-Rebirth/main/assets/installer-preview.png)
+![Installer Screenshot](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/installer-preview.png)
 
 ---
 
 ## 🛠️ How to Install
 
-1. Download the `.zip` from the [latest release](https://github.com/your-username/Nvidia-Rebirth/releases)
+1. Download the `.zip` from the [latest release](https://github.com/rakhalfps/Nvidia-Rebirth/releases)
 2. Use [DDU (Display Driver Uninstaller)](https://www.wagnardsoft.com/) to fully clean existing drivers
 3. Reboot your PC
 4. Run the Rebirth installer and follow on-screen steps
@@ -102,7 +103,7 @@ A: Nvidia Rebirth is stripped of telemetry, GeForce Experience, and unused servi
 
 ## 🤝 Contributing & Support
 
-- 💬 Join the discussion in [GitHub Issues](https://github.com/your-username/Nvidia-Rebirth/issues)
+- 💬 Join the discussion in [GitHub Issues](https://github.com/rakhalfps/Nvidia-Rebirth/issues)
 - 🤖 Get community support via [Discord](https://discord.gg/your-discord)
 - 📥 Pull requests for enhancements are welcome!
 
