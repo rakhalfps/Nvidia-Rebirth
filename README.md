@@ -1,7 +1,6 @@
 # 🎮 Nvidia Rebirth - Modded Nvidia Graphics Driver
 
-![Nvidia Rebirth Banner](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/banner.png)
-![Additional Banner](https://i.imgur.com/SYPXMP5.png)
+![Nvidia Rebirth](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/banner.png)
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/rakhalfps/Nvidia-Rebirth?color=brightgreen&label=Latest%20Release)
 ![GitHub all releases](https://img.shields.io/github/downloads/rakhalfps/Nvidia-Rebirth/total?color=blue&label=Total%20Downloads)
