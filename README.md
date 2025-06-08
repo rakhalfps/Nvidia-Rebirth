@@ -1,109 +1,75 @@
-# 🎮 Nvidia Rebirth - Optimized Modded Nvidia Drivers
+# 📥 Nvidia Rebirth Installation Guide
 
-![Nvidia Rebirth Banner](https://github.com/user-attachments/assets/8c693c85-9ea5-4270-a5f0-2da280d77039)
-
-![Latest Release](https://img.shields.io/github/v/release/your-repo/Nvidia-Rebirth?label=Release)
-![Downloads](https://img.shields.io/github/downloads/your-repo/Nvidia-Rebirth/total)
-![License](https://img.shields.io/badge/license-MIT-blue)
+This guide will walk you through installing the **Nvidia Rebirth modded driver** safely and cleanly using **DDU** (Display Driver Uninstaller).
 
 ---
 
-## 🚀 About Nvidia Rebirth
+## 🔧 Requirements
 
-**Nvidia Rebirth** is a performance-tuned and debloated version of official Nvidia graphics drivers. Created for gamers and creative professionals, it strips away unnecessary services and telemetry while delivering smoother performance, better input latency, and improved system responsiveness.
-
-Compatible with most Nvidia GPUs, the Rebirth driver is perfect for fast-paced games like **Valorant**, **CS2**, **Apex Legends**, and **Fortnite**, as well as demanding workloads in creative tools.
-
----
-
-## 📦 Current Version: **Rebirth V2**
-
-### 🔧 Key Improvements in V2
-
-- ✅ Lower input latency with optimized scheduling
-- ✅ Smoother frametimes in CPU-limited scenarios
-- ✅ Updated shader caching behavior for faster loading
-- ✅ Enhanced power management and fewer background services
-- ✅ Focused improvements for high-refresh displays (144Hz–240Hz+)
-- ✅ Broad compatibility from GTX 10 series to RTX 40 series
+- ✅ Windows 10 / 11 (64-bit only)
+- ✅ Nvidia GPU (GTX 10 series or newer recommended)
+- ✅ [DDU – Display Driver Uninstaller](https://www.wagnardsoft.com/)
+- ✅ Latest **Nvidia Rebirth** driver `.zip` file from [Releases](https://github.com/your-username/Nvidia-Rebirth/releases)
 
 ---
 
-## ⚙️ System Used for Benchmarking
+## 🧼 Step 1: Uninstall Old Drivers with DDU
 
-- **GPU**: Nvidia RTX 4060 8GB  
-- **CPU**: AMD Ryzen 7 5700X3D  
-- **RAM**: 32GB DDR4 3600 CL16  
-- **Resolution**: 1080p, Competitive Settings  
-- **OS**: Windows 10 Pro (22H2)  
-- **Driver**: Nvidia Rebirth V2 (Clean Installed via DDU)
+> 💡 **This step is crucial** to ensure no conflicts or leftover files.
 
----
-
-## 📈 Performance Comparison (V1 vs V2)
-
-| Game                  | V1 Avg FPS | V2 Avg FPS | 1% Lows (V2) | Input Lag Reduction |
-|-----------------------|------------|------------|--------------|----------------------|
-| **Valorant**          | 415        | **450**    | 410          | ~5ms lower           |
-| **CS2**               | 370        | **395**    | 375          | ~4ms lower           |
-| **Apex Legends**      | 230        | **248**    | 225          | ~6ms lower           |
-| **Fortnite (Perf. Mode)** | 290    | **315**    | 305          | ~5ms lower           |
-
-> *All tests conducted in offline or controlled match environments for consistency.*
+1. Download **DDU** from the [official site](https://www.wagnardsoft.com/).
+2. Extract and run `DDU.exe`.
+3. Boot into **Safe Mode** (DDU will prompt you to do this).
+4. Select **GPU > Nvidia** from the dropdown menu.
+5. Click:  
+   **"Clean and restart"**
 
 ---
 
-### 📊 Visual FPS Comparison
+## 📦 Step 2: Install Nvidia Rebirth Driver
 
-![FPS Graph](https://github.com/your-repo/Nvidia-Rebirth/assets/fps-comparison-v2.png)  
-*Bar graph showing average FPS gains from V1 to V2 on RTX 4060 + Ryzen 5700X3D*
-
----
-
-## 📥 Installation Guide
-
-1. **Download** the latest `.zip` from the [Releases](https://github.com/your-repo/Nvidia-Rebirth/releases) tab.
-2. **Uninstall current drivers** using [DDU](https://www.wagnardsoft.com/) in Safe Mode.
-3. **Reboot**, then install the Nvidia Rebirth driver using the provided `.exe` or manual `.inf` method.
-4. **Restart** your PC and enjoy a smoother experience.
-
-📘 For detailed instructions, see the full [Installation Guide](./INSTALL.md)
+1. Extract the `.zip` file downloaded from the **Releases** tab.
+2. Run the installer (`setup.exe`) or open `setup.bat` (if provided).
+3. Follow the custom Nvidia installer flow.
+4. **Check** the box for:  
+   ✅ *“Perform a clean installation”*
+5. Complete the installation and reboot your PC.
 
 ---
 
-## ❓ FAQ
+## 📈 Step 3: Optimize (Optional)
 
-**Q: Is this safe to use?**  
-A: Yes, the base is from official Nvidia drivers. Modifications only remove telemetry and optimize configurations. Use at your own discretion.
-
-**Q: Can I use this on laptops?**  
-A: Yes, but laptops with hybrid graphics (Optimus) may behave differently. Test carefully.
-
-**Q: Do I need to reinstall this with every new GPU driver update?**  
-A: Only if a newer version of Rebirth is released. You can safely stay on the current one if stable.
+- Disable **Hardware-accelerated GPU scheduling** (may vary by game).
+- Use [Nvidia Profile Inspector](https://github.com/Orbmu2k/nvidiaProfileInspector) for advanced tweaks.
+- Enable G-Sync or V-Sync based on your monitor type.
 
 ---
 
-## 🛠️ Planned for Future Versions
+## 📦 Optional Tools
 
-- 🔹 V3 with customizable install options (Studio Mode / Gaming Mode)
-- 🔹 Better overlay support and frametime monitoring tools
-- 🔹 Full support and tweaks for RTX 4090 / next-gen GPUs
-
----
-
-## 🤝 Support & Feedback
-
-- Report bugs in the [Issues](https://github.com/your-repo/Nvidia-Rebirth/issues) section
-- Chat with us or get help via [Discord](https://discord.gg/your-server-link)
-- Pull requests for improvements are welcome!
+| Tool | Purpose |
+|------|---------|
+| [NV CleanInstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) | Advanced custom driver installer |
+| [MSI Mode Utility](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/) | Reduce latency via IRQ changes |
+| [LatencyMon](https://resplendence.com/latencymon) | Monitor system latency issues |
 
 ---
 
-## 📄 License
+## ❗ Troubleshooting
 
-This project is released under the [MIT License](./LICENSE). You are free to use, modify, and distribute.
+| Issue | Solution |
+|-------|----------|
+| Install fails mid-way | Use DDU again, reboot, try clean install |
+| Games crash after update | Delete shader cache from `%LocalAppData%\NVIDIA` |
+| Driver doesn't show | Ensure you're not on a laptop with restricted BIOS |
 
 ---
 
-Thanks for using **Nvidia Rebirth** – modded performance where it matters most.
+## 💬 Need Help?
+
+- Open an [Issue on GitHub](https://github.com/your-username/Nvidia-Rebirth/issues)
+- Join our [Discord](https://discord.gg/your-discord) for fast support
+
+---
+
+Enjoy your cleaner, faster Nvidia experience with **Rebirth V2**!
