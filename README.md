@@ -1,118 +1,72 @@
-# 🎮 Nvidia Rebirth - Modded Nvidia Graphics Driver
+# Nvidia Rebirth: Clean, Optimized Nvidia Graphics Driver for Gaming
 
-![Nvidia Rebirth](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/banner.png)
+![Cover](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/124142ccbc11b8949b91383703d8b243ea138518/Media/Cover.png)
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/rakhalfps/Nvidia-Rebirth?color=brightgreen&label=Latest%20Release)
-![GitHub all releases](https://img.shields.io/github/downloads/rakhalfps/Nvidia-Rebirth/total?color=blue&label=Total%20Downloads)
-![License](https://img.shields.io/badge/license-MIT-blue)
+[![Downloads](https://img.shields.io/github/downloads/rakhalfps/Nvidia-Rebirth/total?color=blue)]()&nbsp;&nbsp;&nbsp;[![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 
 ---
 
-## 🚀 About Nvidia Rebirth
+Nvidia Rebirth is a lightweight, optimized Nvidia driver that removes telemetry and background services to reduce input lag and improve frame stability. Designed for competitive gaming and creators. Tested on RTX 4060 and Ryzen 7 5700X3D. Supports GTX 10 through RTX 40 series GPUs.
 
-**Nvidia Rebirth** is a performance-tuned, debloated version of the official Nvidia graphics driver. Designed for FPS gamers and creators, it removes background bloat, lowers latency, and delivers better frametime stability—without sacrificing core driver reliability.
-
-Tested on systems like **RTX 4060 + Ryzen 7 5700X3D**, Nvidia Rebirth is perfect for competitive games like **Valorant**, **CS2**, **Apex Legends**, and **Fortnite**, offering a smoother and more responsive experience.
+> **Note:** This driver does *not* support or provide benefits for RTX 50-series GPUs. Use official drivers for those.
 
 ---
 
-## 📦 Current Version: **Rebirth V2**
+### System Specs & Performance
 
-### ✅ What's New
-
-- Removed telemetry and unnecessary services
-- Improved CPU-GPU scheduling for better 1% lows
-- Reduced system latency and input delay
-- Optimized for high refresh rate displays (144Hz–360Hz)
-- Better frametime consistency under CPU load
-- Works with GTX 10 series to RTX 40 series
+| Component      | Specification           |        | Game          | Avg FPS | Input Lag Reduction |
+|----------------|-------------------------|--------|---------------|---------|---------------------|
+| GPU            | RTX 4060 8GB            |        | Valorant      | 450     | ~5ms lower          |
+| CPU            | Ryzen 7 5700X3D         |        | CS2           | 395     | ~4ms lower          |
+| RAM            | 32GB DDR4 3600 CL16     |        | Apex Legends  | 248     | ~6ms lower          |
+| OS             | Windows 10 Pro 24H2     |        | Fortnite      | 315     | ~5ms lower          |
 
 ---
 
-## ⚙️ Benchmark System Specs
+### Key Features
 
-| Component | Spec |
-|----------|------|
-| GPU | Nvidia RTX 4060 8GB |
-| CPU | AMD Ryzen 7 5700X3D |
-| RAM | 32GB DDR4 3600 CL16 |
-| OS | Windows 10 Pro 22H2 |
-| Driver Tested | Rebirth V2 |
+- Removed telemetry and unnecessary background services  
+- Improved CPU-GPU scheduling for smoother frame times  
+- Reduced system latency and input delay  
+- Optimized for high refresh rates (144–360Hz)  
+- Stable frame pacing under CPU load  
 
 ---
 
-## 📈 Performance: V1 vs V2 (Avg. FPS & Input Lag)
+### How to Install
 
-| Game                  | V1 Avg FPS | V2 Avg FPS | 1% Lows (V2) | Input Lag Improvement |
-|-----------------------|------------|------------|--------------|------------------------|
-| **Valorant**          | 415        | **450**    | 410          | ~5ms lower             |
-| **CS2**               | 370        | **395**    | 375          | ~4ms lower             |
-| **Apex Legends**      | 230        | **248**    | 225          | ~6ms lower             |
-| **Fortnite (Perf. Mode)** | 290    | **315**    | 305          | ~5ms lower             |
-
-> *Tested with Nvidia Rebirth V2 at 1080p Competitive Settings.*
+1. Download the latest release from [here](https://github.com/rakhalfps/Nvidia-Rebirth/releases).  
+2. Use [DDU](https://www.wagnardsoft.com/) to fully uninstall existing Nvidia drivers.  
+3. Restart your PC.  
+4. Run the Rebirth installer and follow the instructions.  
+5. (Optional) Select “Clean Install” during setup to reset Nvidia settings.
 
 ---
 
-### 📊 FPS Comparison Chart
+### FAQ
 
-![FPS Graph](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/fps-comparison-v2.png)
+- **Will this increase FPS?**  
+  Mainly improves frame stability and reduces input lag; FPS gains vary by system and game.
 
----
+- **Is it compatible with laptops?**  
+  Yes, but hybrid GPU (Optimus) setups may behave differently.
 
-### 🖼️ Installer Preview
-
-![Installer Screenshot](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/main/assets/installer-preview.png)
-
----
-
-## 🛠️ How to Install
-
-1. Download the `.zip` from the [latest release](https://github.com/rakhalfps/Nvidia-Rebirth/releases)
-2. Use [DDU (Display Driver Uninstaller)](https://www.wagnardsoft.com/) to fully clean existing drivers
-3. Reboot your PC
-4. Run the Rebirth installer and follow on-screen steps
-5. **Optional:** Check "Clean Install" to reset Nvidia settings to default
-
-📘 For step-by-step images, see the full [INSTALLATION GUIDE](./INSTALL.md)
+- **How does it differ from official drivers?**  
+  Removes telemetry, GeForce Experience, and unused services to reduce bloat and improve responsiveness.
 
 ---
 
-## ❓ FAQ
+### Roadmap & Support
 
-**Q: Will this boost FPS?**  
-A: Rebirth focuses on frametime consistency and latency; FPS increases vary by title and system.
+- Install profiles for Gaming and Studio modes  
+- Support for RTX 4090 and newer GPUs (except 50-series)  
+- Built-in latency monitoring tools (planned)  
+- Multi-language and multi-OS support coming  
 
-**Q: Is this compatible with laptops?**  
-A: Yes, but Optimus/hybrid GPU configurations may behave differently.
-
-**Q: How is this different from official drivers?**  
-A: Nvidia Rebirth is stripped of telemetry, GeForce Experience, and unused services—making it faster, cleaner, and more focused.
-
----
-
-## 📅 Roadmap
-
-- 🔧 Optional install profiles (Gaming vs Studio)
-- 🧪 Expanded support for RTX 4090, 50-series GPUs
-- 🧰 Inbuilt latency monitoring tools (future concept)
-- 🗂️ Language localization and multi-OS support
+Report issues or request features on [GitHub Issues](https://github.com/rakhalfps/Nvidia-Rebirth/issues).  
+Join the community on [Discord](https://discord.gg/krpUAHkf5m).  
+Contributions and pull requests welcome!
 
 ---
 
-## 🤝 Contributing & Support
-
-- 💬 Join the discussion in [GitHub Issues](https://github.com/rakhalfps/Nvidia-Rebirth/issues)
-- 🤖 Get community support via [Discord](https://discord.gg/your-discord)
-- 📥 Pull requests for enhancements are welcome!
-
----
-
-## 📄 License
-
-Licensed under the [MIT License](./LICENSE).  
-Use and share freely with attribution.
-
----
-
-Thanks for using **Nvidia Rebirth** — the driver your GPU deserves.
+© MIT License | Thank you for choosing **Nvidia Rebirth**
